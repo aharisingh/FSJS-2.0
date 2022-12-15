@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+         /* Universal Selector */
+         *{
+            padding: 2px;
+            margin: 10px;
+            background-color: rgb(42, 126, 126);
+            color: rgb(14, 6, 6);
+        }
+        /* Type Selector */
+        p{
+            padding: 2px;
+            margin: 10px;
+            background-color: rgb(163, 163, 28);
+            color: rgb(10, 4, 4);
+        }
+         /* Class and Id Selector */
+         .text-green{
+            color: green;
+        }
+        #text-pink{
+            color: rgb(182, 23, 50);
+        }
+         /* Descendent Selector */
+       div h4{
+            color: rgb(34, 189, 189);
+       }
+        /* Child Selector */
+        div > h4{
+            color: pink;
+       }
+        /* Next Sibling Selector */
+       div + h4{
+            color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas hic commodi neque voluptatem, veniam repudiandae iusto quaerat numquam minus sed omnis deleniti eos sunt molestiae perferendis saepe reprehenderit nobis unde illo deserunt totam id assumenda? Ex reiciendis sapiente accusantium impedit, unde facere iure laboriosam recusandae sed, eveniet vero earum.</p>
+    <h1>Hello Everyone</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptas hic commodi neque voluptatem, veniam repudiandae iusto quaerat numquam minus sed omnis deleniti eos sunt molestiae perferendis saepe reprehenderit nobis unde illo deserunt totam id assumenda? Ex reiciendis sapiente accusantium impedit, unde facere iure laboriosam recusandae sed, eveniet vero earum.</p>
+    <h1>First Heading</h1>
+    <h3>Second Heading</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p id = "text-pink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus?</p>
+    <h4 class = "text-green">H4 Heading</h4>
+    <h5 class = "text-green">H5 Heading</h5>
+    <h6 class = "text-green">H6 Heading</h6>
+    <div>
+        <h4>Div Descendent one</h4>
+        <h4>Div Descendent two</h4>
+        <span>
+            <h4>Not a direct Descendent</h4>
+        </span>
+    </div>
+    <h4>First Sibling - Outside of Div</h4>
+    <h4>Second Sibling - Outside of Div</h4>
+</body>
+</html>
