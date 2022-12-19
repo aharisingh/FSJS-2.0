@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and css</title>
+    <style>
+        /* position :  static (default) , Fixed , Sticky , Absolute And Relative */
+        .container{
+            height: 15000px;
+            border: 2px solid yellow;
+        }
+        .pos{
+            border: 1px solid grey;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #three{
+            position: sticky;
+            top: 25px;
+            left: 25px;
+        }
+
+        
+    </style>
+</head>
+<body>
+   
+  <div class="container">
+    <div class="pos">One</div>
+    <div class="pos">Two </div>
+    <div class="pos" id = "three">Three</div>
+    <div class="pos">Four</div>
+  </div>
+
+</body>
+</html>
