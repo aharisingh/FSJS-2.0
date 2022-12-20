@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            display: flex;
+        }
+       .box{
+        height: 60px;
+        width: 60px;
+        border: 2px solid aqua;
+        margin: 3px;
+        text-align: center;
+       }
+       @media (max-width:500px){
+        .container{
+            background-color: rgb(15, 179, 15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+        }
+       }
+       @media (min-width : 501px) and (max-width : 768px){
+        .container{
+            background-color: rgb(87, 27, 184);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid grey;
+            height: 40px;
+            width: 40px;
+        }
+       }
+
+       @media (min-width : 769px) and (max-width : 992px){
+        .container{
+            background-color: rgb(233, 87, 19);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid rgb(216, 13, 13);
+            height: 40px;
+            width: 40px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">One</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl and CSS</title>
+    <style>
+        /* after using Postion we can use top bottom right and left  */
+        p{
+            display: flex;
+            height: 1000px;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+        .pos{
+            border: 1px solid black;
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #four{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: cyan;
+        }
+        /* #two{
+            position: relative;
+            top: 15px;
+            right: 15px;
+        } */
+        #three{
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="pos" id="one">One</div>
+        <div class="pos" id="two">Two</div>
+        <div class="pos" id="three">Three</div>
+        <div class="pos" id="four">Four</div>
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quisquam vero ratione sequi numquam voluptas ipsum reprehenderit corrupti atque nostrum!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quis asperiores eum at nostrum, maxime nulla pariatur esse repellendus facere obcaecati illo cupiditate deleniti cumque ducimus incidunt natus non fuga.</p>
+    </div>
+</body>
+</html>
