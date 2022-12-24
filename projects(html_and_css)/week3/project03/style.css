@@ -1,0 +1,138 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+/*Basic CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/*NAVBAR CSS*/
+.navbar-container{
+   /* margin-left: 10%; */
+   margin-top: 3%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.navbar-container div img{
+    width: 60%;
+}
+
+.list{
+display: flex;
+align-items: center;
+}
+
+.list li{
+    list-style: none;
+    margin-right: 15px;
+}
+.list li:first-child{
+    text-decoration: underline;
+}
+
+.button-group{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-button{
+    color: #515151;
+    padding: 3px 20px;
+    margin-left: 2px;
+    border-radius: 6px;
+}
+
+/* Hero Section CSS */
+.hero-container{
+    margin-top: 50px;
+    margin-left: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container .square img{
+    position: absolute;
+   width: 250px;
+   height: 250px;
+    top: 165px;
+    left: 100px;
+}
+
+.hero-container div img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+
+.hero-container .star:nth-child(2) img{
+    position: relative;
+    left: 690px;
+    width: 60%;
+    top: 15px;
+}
+
+.hero-container .star:nth-child(3) img{
+    position: relative;
+    top: 320px;
+    left: 280px;
+    width: 60%;
+}
+
+.globe img{
+    position: relative;
+   left:350%;
+   width: 50%;
+   margin-top: -50px;
+}
+
+.hero-container-right{
+    width: 45%;
+    margin-left: 100px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.hero-container-right .hero-heading{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.hero-container-right .hero-description{
+    font-size: 13px;
+    padding-bottom: 40px;
+}
+
+.button-email{
+padding: 2px 12px;
+background-color: #ffffff;
+color: #515151;
+border: 2px solid #5a5a5a;
+border-radius: 8px;
+}
+
+.button-join{
+padding: 2px;
+background-color: #0b0c0e;
+color: #ffffff;
+border-radius: 5px;
+margin-left: 5px;
+}
+
+.contact-heading{
+    padding-top: 70px;
+    color: #6a6a6a;
+}
+
+.icons span:nth-child(n) img{
+    width: 25px;
+    margin:4px;
+    position: relative;
+}

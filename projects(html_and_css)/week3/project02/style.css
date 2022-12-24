@@ -1,0 +1,60 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #000000;
+    color: #dfdfdf;
+    display: flex;
+    align-items: center;
+    padding: 11px;
+}
+.navbar div img{
+   margin-left: 50px;
+   width: 50%;
+}
+.grow-list .list{
+    display: flex;
+    margin-right: 130px;
+}
+.list li{
+    list-style: none;
+    margin-right: 50px;
+}
+
+.button-small{
+    /* position: relative;
+  left: 190px; */
+  padding: 5px 10px;
+  background-color: #ba0cc5;
+  color: #fefdfe;
+  border-radius: 5px;
+}
+
+.hero{
+    background-image: url("./assets/bg.png");
+    height: 800px;
+    color: #fefdfe;
+    text-align: center;
+}
+
+.hero .hero-heading{
+padding-top: 200px;
+font-size: 50px;
+}
+.hero .hero-description{
+    font-size: 20px;
+}
+
+.button-large{
+    padding: 8px;
+    margin-top: 30px;
+    background-color: #ba0cc5;
+    color: #f5dcf7;
+    border: none;
+    border-radius: 4px;
+}
