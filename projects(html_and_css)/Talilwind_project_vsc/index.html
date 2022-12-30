@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VSC Clone</title>
+</head>
+<body>
+    <div>
+        <!-- Navigation Section -->
+        <nav class = "bg-slate-800 flex items-center text-white  text-[10px] justify-around px-8">
+            <div class = "flex items-center basis-0.5/5">
+                <img src="./images/vsc_logo.PNG" alt="VSC Logo">
+                <p class="pl-1"><a href="#">Visual Studio Code</a></p>
+            </div>
+            <div class = "basis-2/5">
+                <ul class = "flex grow justify-around text-slate-400">
+                    <li class = "hover:text-white"><a href="https://code.visualstudio.com/docs" target="_blank">Docs</a></li>
+                    <li class = "hover:text-white"><a href="https://code.visualstudio.com/updates/v1_74" target="_blank">Updates</a></li>
+                    <li class = "hover:text-white"><a href="https://code.visualstudio.com/blogs/2022/12/07/remote-even-better" target="_blank">Blog</a></li>
+                    <li class = "hover:text-white"><a href="https://code.visualstudio.com/api" target="_blank">API</a></li>
+                    <li class = "hover:text-white"><a href="https://marketplace.visualstudio.com/VSCode" target="_blank">Extensions</a></li>
+                    <li class = "hover:text-white"><a href="https://code.visualstudio.com/docs/supporting/faq" target="_blank">FAQ</a></li>
+                    <li class = "hover:text-white"><a href="https://code.visualstudio.com/learn" target="_blank">Learn</a></li>
+                </ul>
+            </div>
+            <div class = "basis-2/5 pl-10">
+                <input class = "bg-slate-700 text-center p-1" type="search" placeholder="Search Docs">
+                <button class = "bg-blue-600 px-3 py-1">Download</button>
+            </div>
+        </nav>
+        <!-- Educational Purpose Section  -->
+        <div class = "bg-slate-600 text-center text-white py-2">
+            <p>For Educational Purpose</p>
+        </div>
+        <!-- Version Number Update  Section  -->
+        <div class = "bg-slate-700 text-center text-white text-[9px] p-2">
+           <p> <a class = "text-blue-600 hover:underline hover:underline-offset-1" href = "https://code.visualstudio.com/updates/v1_74" target="_blank">Version 1.74</a> is now available! Read about the new features and fixes from November.</p>
+        </div>
+        <!-- Hero Section  -->
+        <div class = "bg-slate-800 flex px-[90px] py-6 text-white">
+            <div class = "py-2 text-center basis-2/5">
+                <p class = "text-[23px]">Code editing.</p>
+               <p class = "font-bold text-[20px]">Redefined.</p>
+               <p class = "text-[10px] py-2 text-slate-400">Free. Built on open source. Runs everywhere.
+            </p>
+            <button class="bg-blue-600 px-3  text-[13px]">
+                <p class ="font-bold">Download for Windows</p>
+                <p class = "text-slate-100">Stable Build</p>
+            </button>
+            <p class ="text-[8px] pt-2 text-center text-slate-400">By using VS Code, you agree to its</p>
+            <p class = "text-blue-600 text-[8px] hover:underline hover:underline-offset-1"><a href="#licenseandprivacyterm">license and privacy statement.</a></p>
+            </div>
+            <div class ="pl-[30px] basis-3/5">
+                <img src="./images/code.PNG" alt="VSC Editor">
+            </div>
+        </div>
+        <!-- Features Section  -->
+        <div class = "flex items-center justify-evenly">
+            <div>
+                <a href="#meet-intellisense"><div><img src="./images/intellisense_1.PNG" alt="intellisense Feature"> 
+                </div>
+                    <h2 class = "pl-4 pt-1">IntelliSense</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#powerful-debugging"><img src="./images/run_and_debug_1.PNG" alt="Run and Debug Feature"> 
+                    <h2>Run and Debug</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#built-in-git"><img src="./images/built_in_git_1.PNG" alt="Git Feature"> 
+                    <h2 class = "pl-3">Built-in Git</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#hundreds-of-extensions"><img src="./images/extension_1.PNG" alt="Extensions Feature"> 
+                    <h2 class ="pl-1">Extensions</h2>
+                </a>
+            </div>
+        </div>
+        <!-- Features In Details  -->
+        <div>
+            <!-- IntelliSense Feature  -->
+            <div id = "meet-intellisense" class = "flex py-[40px]">
+                <div class = "pl-[100px] basis-2/5">
+                    <img src="./images/meet_intellisense.PNG" alt="Intellisense" width ="80%">
+                </div>
+                <div class = "basis-3/5">
+                    <h2 class ="text-slate-600">Meet IntelliSense.</h2>
+                    <p class = "text-[10px] pt-5">Go beyond syntax highlighting and autocomplete with IntelliSense, which </p>
+                        <p class = "text-[10px] pt-1"> provides smart completions based on variable types, function definitions, and </p>
+                         <p class = "text-[10px] pt-1">imported modules.</p>
+                </div>
+            </div>
+            <!-- Debugging Feature  -->
+            <div id = "powerful-debugging" class = "flex py-[40px] bg-slate-100">
+                <div class = "basis-3/5 pl-[100px]">
+                    <h2 class = "text-slate-600">Print statement debugging is a thing of the past.</h2>
+                    <p class = "text-[10px] pt-5">Debug code right from the editor. Launch or attach to your running apps and</p>
+                    <p class = "text-[10px] pt-1"> debug with break points, call stacks, and an interactive console.</p>
+                </div>
+                <div class = "basis-2/5">
+                    <img src="./images/powerful-debugging.PNG" alt="Debugger" width ="80%">
+                </div>
+            </div>
+             <!-- Git Feature  -->
+            <div id = "built-in-git" class = "flex py-[40px]">
+                <div class = "pl-[100px] basis-2/5">
+                    <img src="./images/powerful_git.PNG" alt="Git" width = "80%">
+                </div>
+                <div class = "basis-3/5">
+                    <h2 class = "text-slate-600">Git commands built-in.</h2>
+                    <p class = "text-[10px] pt-5">Working with Git and other SCM providers has never been easier. Review diffs,
+                    </p>
+                    <p class = "text-[10px] pt-1">stage files, and make commits right from the editor. Push and pull from 
+                    </p>
+                    <p class ="text-[10px] pt-1">
+                        any hosted SCM service.
+                    </p>
+                </div>
+            </div>
+            <!-- Extensible and Customizable  -->
+            <div id = "hundreds-of-extensions" class = "flex py-[40px] bg-slate-100">
+                <div class = "basis-3/5 pl-[100px]">
+                    <h2 class = "text-slate-600">Extensible and customizable.</h2>
+                    <p class = "text-[10px] pt-5">Want even more features? Install extensions to add new languages, themes,</p>
+                    <p class = "text-[10px] pt-1"> debuggers, and to connect to additional services. Extensions run in separate</p>
+                    <p class = "text-[10px] pt-1">processes, ensuring they won't slow down your editor.     <a class = "text-blue-600 hover:underline hover:underline-offset-1" href = "https://code.visualstudio.com/docs/editor/extension-marketplace" target="_blank">Learn more about extensions.</a></p>
+                </div>
+                <div class = "basis-2/5">
+                    <img src="./images/extension_and_customizable.PNG" alt="Extensions_and_Customizable" width ="80%">
+                </div>
+            </div>
+        </div>
+
+        <!-- Deployment Section  -->
+        <div class = "flex py-[40px]">
+            <div class = "pl-[100px] basis-2/5">
+                <img src="./images/deploy_with_confidence.PNG" alt="deployment" width ="80%">
+            </div>
+            <div class = "basis-3/5">
+                <h2 class ="text-slate-600">Deploy with confidence and ease</h2>
+                <p class = "text-[10px] pt-5">With <a class  ="text-blue-600 hover:underline hover:underline-offset-1" href = "https://azure.microsoft.com/en-in/" target="_blank">Microsoft Azure</a>  you can deploy and host your React, Angular, Vue, Node, </p>
+                    <p class = "text-[10px] pt-1"> Python (and more!) sites, store and query relational and document based data, </p>
+                     <p class = "text-[10px] pt-1">and scale with serverless computing, all with ease, <a href="https://code.visualstudio.com/docs/azure/extensions" target="_blank" class = "text-blue-600 hover:underline hover:underline-offset-1">
+                        all from within VS Code
+                     </a> .</p>
+            </div>
+        </div>
+
+        <!-- VS Code Market Place  -->
+        <div class = "text-center bg-slate-100">
+            <h3 class ="text-slate-600 py-5">VS Code for</h3>
+            <!-- Main languages  -->
+           <div class ="flex justify-evenly px-[100px] text-[12px]">
+            <div>
+                <p>JavaScript</p>
+            </div>
+            <div>
+                <p>Python</p>
+            </div>
+            <div>
+                <p>Java</p>
+            </div>
+            <div>
+                <p>Markdown</p>
+            </div>
+            <div>
+                <p>TypeScript</p>
+            </div>
+            <div>
+                <p>C/C++</p>
+            </div>
+           </div>
+           <!-- Secondary languages  -->
+           <div class ="flex justify-evenly px-[100px] text-[12px] py-2">
+            <div>
+                <p>JSON</p>
+            </div>
+            <div>
+                <p>Powershell</p>
+            </div>
+            <div>
+                <p>HTML/CSS</p>
+            </div>
+            <div>
+                <p>C#</p>
+            </div>
+            <div>
+                <p>PHP</p>
+            </div>
+            <div>
+                <p>YAML</p>
+            </div>
+           </div>
+           <p>
+            <a href="https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs" target = "_blank" class = "text-[10px] text-blue-600 hover:underline hover:underline-offset-1">and many more languages on the Marketplace...</a>
+           </p>
+
+            <button class = "py-1  my-5 bg-blue-700 text-white px-4 text-[12px] hover:bg-blue-800"><a href="https://code.visualstudio.com/docs" target="_blank">Get Started Now</a></button>
+        </div>
+
+        <!-- Download Section  -->
+        <div class ="flex justify-evenly items-center py-5 text-center">
+            <!-- Windows Section  -->
+            <div>
+                <div>
+                    <img src="./images/windows.PNG" alt="Windows Logo" width = "80%">
+                </div>
+                <div>
+                 <button class ="bg-blue-600 text-white px-8 py-1 text-[12px]">
+                    Windows
+                <p class ="text-[8px]">Windows 8, 10, 11</p>
+                </button>
+                </div>
+                <div class ="text-[9px] mt-3 flex justify-evenly">
+                   <p>User Installer</p>
+                    <div class ="text-[8px]  text-white">
+                    <a href="#" class ="bg-blue-700">x64</a>
+                    <a href="#" class ="bg-blue-700">x86</a>
+                    <a href="#" class ="bg-blue-700">Arm64</a>
+                    </div>
+                </div>
+                <div class ="text-[9px] flex justify-evenly">
+                   <p>System Installer</p> 
+                    <div class ="text-[8px]  text-white">
+                    <a href="#" class ="bg-blue-700">x64</a>
+                    <a href="#" class ="bg-blue-700">x86</a>
+                    <a href="#" class ="bg-blue-700">Arm64</a>
+                    </div>
+                </div>
+                <div class ="text-[9px] flex justify-evenly">
+                   <p>.zip</p>  
+                    <div class ="text-[8px]  text-white ml-10">
+                    <a href="#" class ="bg-blue-700">x64</a>
+                    <a href="#" class ="bg-blue-700">x86</a>
+                    <a href="#" class ="bg-blue-700">Arm64</a>
+                    </div>
+                </div>
+                <div class ="text-[9px] flex justify-evenly">
+                   <p>CLI</p>  
+                    <div class ="text-[8px]  text-white ml-10">
+                    <a href="#" class ="bg-blue-700">x64</a>
+                    <a href="#" class ="bg-blue-700">x86</a>
+                    <a href="#" class ="bg-blue-700">Arm64</a>
+                    </div>
+                </div>
+            </div>
+                <!-- Linux Section  -->
+                <div>
+                    <div>
+                        <img src="./images/linux.PNG" alt="LinuX Logo" width = "60%">
+                    </div>
+                    <div>
+                        <button class ="bg-blue-600 text-white px-2 py-1 text-[12px]">
+                            .deb
+                        <p class ="text-[8px]">Debian, Ubuntu</p>
+                        </button>
+                        <button class ="bg-blue-600 text-white px-2 py-1 text-[12px]">
+                            .rpm
+                        <p class ="text-[8px]">Red Hat, Fedora , SUSE</p>
+                        </button>
+                    </div>
+                    <div class ="text-[9px] mt-3 flex justify-evenly">
+                       <p>.deb</p> 
+                        <div class ="text-[8px]  text-white">
+                            <a href="#" class ="bg-blue-700">x64</a>
+                        <a href="#" class ="bg-blue-700">Arm32</a>
+                        <a href="#" class ="bg-blue-700">Arm64</a>
+                        </div>
+                    </div>
+                    <div class ="text-[9px] flex justify-evenly">
+                       <p>.rpm</p> 
+                        <div class ="text-[8px]  text-white">
+                            <a href="#" class ="bg-blue-700">x64</a>
+                        <a href="#" class ="bg-blue-700">Arm32</a>
+                        <a href="#" class ="bg-blue-700">Arm64</a>
+                        </div>
+                    </div>
+                    <div class ="text-[9px] flex justify-evenly">
+                       <p>.tar.gz</p>  
+                        <div class ="text-[8px]  text-white">
+                            <a href="#" class ="bg-blue-700">x64</a>
+                        <a href="#" class ="bg-blue-700">Arm32</a>
+                        <a href="#" class ="bg-blue-700">Arm64</a>
+                        </div>
+                    </div>
+                    <div class ="text-[9px] flex justify-evenly">
+                       <p>Snap</p>  
+                        <div class ="text-[8px]  text-white">
+                            <a href="#" class ="bg-blue-700">Snap Store</a>
+                        </div>
+                    </div>
+                    <div class ="text-[9px] flex justify-evenly">
+                       <p>CLI</p>  
+                        <div pan class ="text-[8px]  text-white">
+                            <a href="#" class ="bg-blue-700">x64</a>
+                        <a href="#" class ="bg-blue-700">Arm32</a>
+                        <a href="#" class ="bg-blue-700">Arm64</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mac Section  -->
+                <div class = "mt-[-20px]">
+                    <div>
+                        <img src="./images/mac.PNG" alt="MAC Logo" width = "60%">
+                    </div>
+                    <div>
+                     <button class ="bg-blue-600 text-white px-8 py-1 text-[12px]">
+                        MAC
+                    <p class ="text-[8px]">macOS 10.11+</p>
+                    </button>
+                    </div>
+                    <div class ="text-[9px] mt-3 flex">
+                       <p>.zip</p> 
+                        <div class ="text-[8px]  text-white ml-1">
+                            <a href="#" class ="bg-blue-700">Intel chip</a>
+                        <a href="#" class ="bg-blue-700">Apple silicon</a>
+                        <a href="#" class ="bg-blue-700">Universal</a>
+                        </div>
+                    </div>
+                    <div class ="text-[9px] flex justify-evenly">
+                      <p>CLI</p>
+                        <div class ="text-[8px]  text-white">
+                            <a href="#" class ="bg-blue-700">Intel chip</a>
+                        <a href="#" class ="bg-blue-700">Apple silicon</a>
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- License and Privacy Terms Section  -->
+        <div class = "bg-slate-100 p-4 text-center">
+            <div class = "flex justify-evenly">
+                <div>
+                    <h3 class ="text-[12px]">Want new features sooner?</h3>
+                    <p class = "text-[10px] py-1">Get the <a class  ="text-blue-600 hover:underline hover:underline-offset-1" href = "https://code.visualstudio.com/insiders/" target="_blank">Insiders build</a>  instead.</p>
+                </div>
+                <div>
+                    <h3 class = "text-[12px]">Use <a class  ="text-blue-600 hover:underline hover:underline-offset-1" href = "https://vscode.dev/" target = "_blank">vscode.dev</a>  for quick edits</h3>
+                    <p class = "text-[12px]">online!</p> 
+                    <p class ="text-[10px] py-1">GitHub, Azure Repos, and local files.</p>
+                </div>
+            </div>
+            <div id = "licenseandprivacyterm" class = "py-[40px]">
+                <h3 class = "text-[9px]">LICENSE AND PRIVACY TERMS</h3>
+                <div class = "py-1 text-[9px]">
+                    <p>By downloading and using Visual Studio Code, you agree to the <a class  ="text-blue-600 hover:underline hover:underline-offset-1" href = "https://code.visualstudio.com/License/" target="_blank">license terms</a>  and <a class  ="text-blue-600 hover:underline hover:underline-offset-1" href = "https://privacy.microsoft.com/en-ca/privacystatement" target="_blank">privacy statement</a>. VS Code</p>
+                <p class  ="py-2">automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not</p>
+                <p>to have this data sent please go see <a class  ="text-blue-600 hover:underline hover:underline-offset-1" href = "https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting" target="_blank">How to Disable Crash Reporting</a> to learn how to disable it.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section  -->
+        <Footer class = "bg-black text-white text-[8px] py-3 px-2">
+            <div class = "flex justify-evenly items-center">
+                <div class = "basis-2/5">
+                    <ul class = "flex justify-evenly">
+                     <li>Hello from Seattle.</li>
+                     <li class = "hover:text-fuchsia-500"><a href="https://twitter.com/code" target="_blank"> Follow @code</a></li>
+                      <li class = "hover:text-fuchsia-500"><a href="https://github.com/Microsoft/vscode/" target="_blank">GitHub</a></li>
+                    </ul>
+                 </div>
+                 <div class = "basis-2/5">
+                     <ul class = "flex justify-between">
+                         <li class = "hover:text-fuchsia-500"><a href="https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d66407ed-3967-b000-4cfb-2c318cad363d" target="_blank">Support</a></li>
+                         <li class = "hover:text-fuchsia-500"><a href="https://privacy.microsoft.com/en-ca/privacystatement" target="_blank">Privacy</a></li>
+                         <li class = "hover:text-fuchsia-500"><a href="https://www.microsoft.com/en-us/legal/terms-of-use" target="_blank">Terms of Use</a></li>
+                         <li class = "hover:text-fuchsia-500"><a href="https://code.visualstudio.com/License" target="_blank">License</a></li>
+                         <li class = "hover:text-fuchsia-500"><a href="https://www.microsoft.com/en-in/" target="_blank">Microsoft</a></li>
+                     </ul>
+                 </div>
+            </div>
+            <div class ="text-center py-2">
+                <div>
+                    <p>&#169; <span id = "currentYear"></span>  Microsoft</p>
+                </div>
+            </div>
+        </Footer>
+    </div>
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
