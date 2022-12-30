@@ -1,3 +1,3 @@
-Live Project Link : [vscode clone](vscodeclonee.netlify.app)
+Live Project Link : [vscode clone](https://vscodeclonee.netlify.app/)
 
 Note : It's not screen- responsive yet .
