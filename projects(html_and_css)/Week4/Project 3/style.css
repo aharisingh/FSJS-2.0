@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    background-color: #2b2923;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 70px;
+}
+.navbar div:nth-child(1){
+    flex:3;
+}
+.navbar div:nth-child(2){
+    flex:7;
+}
+.navbar div:nth-child(2) ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar div:nth-child(2) ul li{
+    list-style: none;
+    font-size: 10px;
+}
+.navbar div:nth-child(2) ul li a{
+    color: #898882;
+}
+.navbar div:nth-child(2) ul li:nth-child(5) a{
+    color: #9f8f36;
+}
+
+.btn{
+    padding: 3px 7px;
+    border: 1px solid #675e2d;
+    border-radius: 4px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px  0px;
+    color: white;
+}
+.main div:nth-child(1){
+    font-size: 22px;
+}
+.main div:nth-child(2){
+    font-size: 10px;
+    padding-top: 10px;
+}
+.main div h2:nth-child(2){
+    padding: 3px;
+}
+
+.banner img{
+     width: 72%;
+    display: block;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+@media (max-width : 590px){
+    .navbar{
+        display: block;
+        padding: 5px 70px;
+    }
+    .navbar div:nth-child(2) ul{
+        display: block;
+        margin-top: 5px;
+    }
+    .navbar div:nth-child(2) ul li{
+        list-style: none;
+        font-size: 10px;
+    }
+}
+
+@media (max-width : 400px){
+    .navbar{
+        display: block;
+        padding: 5px 70px;
+    }
+    .navbar div:nth-child(2) ul{
+        display: block;
+        margin-top: 5px;
+    }
+    .navbar div:nth-child(2) ul li{
+        list-style: none;
+        font-size: 10px;
+    }
+    .main{
+        display: block;
+        padding: 35px  0px;
+        color: white;
+    }
+    .main div:nth-child(1){
+        font-size: 18px;
+    }
+    .main div:nth-child(2){
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    .main div h2:nth-child(2){
+        padding: 3px;
+    }
+    
+    .banner img{
+        display: block;
+        margin: auto;
+    }
+}
