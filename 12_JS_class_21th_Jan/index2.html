@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class = "para"></p>
+    <script>
+        //alert 
+        // alert("Hello World!");
+        // setTimeout(() =>{
+        //     alert("Hewllo WOrld after 3 sec");
+        // },3000);
+
+        //confirm box
+        // let val = confirm("Hello , Are you from india ? "); 
+        // if(val){
+        //     document.querySelector(".para").innerText = "Yes , He is from India";
+        // }
+        // else{
+        //     document.querySelector(".para").innerText = "Yes , He is not from India";
+        // }
+
+        //prompt
+        let val1 = prompt("Enter 5");
+        if(Number.parseInt(val1) === 5){
+            document.querySelector('.para').innerText = "User entered the value of 5";
+            document.querySelector('.para').style.color = "green";
+        }
+        else{
+            document.querySelector('.para').innerText = "User not entered the value of 5";
+            document.querySelector('.para').style.color = "red";
+        }
+    </script>
+</body>
+</html>
