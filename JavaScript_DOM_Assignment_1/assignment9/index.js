@@ -1,0 +1,1 @@
+document.querySelector(".text-color-white").style.color = "red";

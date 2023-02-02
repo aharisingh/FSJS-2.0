@@ -1,0 +1,1 @@
+document.querySelector(".home22-intro-title").innerText = "Don't comment bad code- rewrite it";

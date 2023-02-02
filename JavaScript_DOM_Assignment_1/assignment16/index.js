@@ -1,0 +1,1 @@
+document.querySelector(".section-title_title__VEDfK").innerText = "Everything begins with an idea";
