@@ -7,20 +7,11 @@ app.use(express.urlencoded({extended : false }))
 app.use(express.json())
 
 const people = require("./routes/people")
-
+const auth =  require("./routes/auth")
 app.use(express.static("./methods-public"))
 
 app.use("/api/people",people)
-
-
-app.post("/login",(req,res) =>{
-    const {name} =  req.body
-    if(name){
-        return res.status(200).send(`Hola ${name}`)
-    }
-    return res.status(401).send(`Please provide Credentials`)
-})
-
+app.use("/listen",auth)
 app.listen(port,() =>{
     console.log(`Server is listening on ${port}`)
 })
